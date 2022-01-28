@@ -1,25 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import App from './App';
-import About from './About';
-import Contact from './Contact';
-import Portfolio from './Portfolio';
-import Resume from './Resume';
 
 ReactDOM.render(
   <React.StrictMode>
   <HashRouter>
-    <Routes>
-      <Route path='/personal-site' element={<App />}>
-        <Route path='/personal-site/about' element={<About/>}/>  
-        <Route path='/personal-site/contact' element={<Contact/>}/>  
-        <Route path='/personal-site/portfolio' element={<Portfolio/>}/>  
-        <Route path='/personal-site/resume' element={<Resume/>}/>  
-      </Route>
-    </Routes>
+    <App/>
   </HashRouter>
   </React.StrictMode>,
   document.getElementById('root')
