@@ -4,25 +4,24 @@ import './styles/Navbar.css';
 
 export default function Navbar(props) {
     return (
-        <div className='container'>
+        <div className='container navbar navbar-expand-lg navbar-dark bg-dark'>
             <div className='row'>
-                <div className='col'>
+                <div className='col nav-link'>
                     <NavLink to='/'>Home</NavLink>
                 </div>
-                <div className='col'>
+                <div className='col nav-link'>
                     <NavLink to='/about'>About</NavLink>
                 </div>
-                <div className='col'>
+                <div className='col nav-link'>
                     <NavLink to='/contact'>Contact</NavLink>
                 </div>
-                <div className='col'>
+                <div className='col nav-link'>
                     <NavLink to='/portfolio'>Portfolio</NavLink>
                 </div>
-                <div className='col'>
+                <div className='col nav-link'>
                     <NavLink to='/resume'>Resume</NavLink>
                 </div>              
             </div>
-
         </div>
     );
 }
