@@ -26,9 +26,9 @@ export default function Home() {
     return( 
         <div className='Home'>
         <Navbar/>
-          <div className='container-fluid'>
-            <BackgroundCircle width={circleWidth} height={circleHeight}/>
-          </div>
+        <div className='Home-Circle'>
+          <BackgroundCircle width={circleWidth} height={circleHeight}/>
+        </div>
         <Outlet/>
       </div>
     );

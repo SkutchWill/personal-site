@@ -2,13 +2,17 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
 const Animate = keyframes`
-    from {
-        transform: scale(0.1);
-        opacity: 1;
+    0% {
+        transform: scale(0.01);
+        opacity: 0;
     }
 
-    to {
-        transform: scale(5);
+    50% {
+        opacity: 0.75;
+    }
+
+    100% {
+        transform: scale(8);
         opacity: 0;
     }
 `;
@@ -16,13 +20,17 @@ const Animate = keyframes`
 const Circle = styled.div`
     background: transparent;
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 3rem;
+    height: 3rem;
     top: ${props => props.height}px;
     left: ${props => props.width}px;
-    animation: ${Animate} 2s ease-out infinite;
-    border: 5px solid #000;
+    animation-name: ${Animate};
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    border: 0.1rem solid #000;
     border-radius: 50%;
+    z-index: -1;
 `;
 
 function BackgroundCircle(props) {
@@ -30,7 +38,7 @@ function BackgroundCircle(props) {
     const {width, height} = props;
 
     return (
-        <Circle width={width} height={height}></Circle>
+        <Circle key={`${width}${height}`} width={width} height={height}></Circle>    
     );
 }
 
