@@ -18,9 +18,6 @@ export default function Navbar(props) {
                 <div className='col nav-link'>
                     <NavLink to='/portfolio'>Portfolio</NavLink>
                 </div>
-                <div className='col nav-link'>
-                    <NavLink to='/resume'>Resume</NavLink>
-                </div>              
             </div>
         </div>
     );

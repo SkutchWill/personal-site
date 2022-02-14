@@ -22,7 +22,9 @@ export default function Home() {
     }, );
 
     return( 
-      <div className='Home'>
+      <div className='Home container'>
+        <h1 className='text-center'>Under Construction</h1>
+        <h2 className='text-center'>Check Back Soon!</h2>
         <div className='Home-Circle'>
           <BackgroundCircle width={circleWidth} height={circleHeight}/>
         </div>
