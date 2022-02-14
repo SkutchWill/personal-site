@@ -1,6 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import { Outlet } from 'react-router-dom';
-import Navbar from './Navbar';
 import { BackgroundCircle } from './BackgroundCircle';
 import { getRandom } from './helpers';
 import './styles/Home.css';
@@ -24,12 +22,10 @@ export default function Home() {
     }, );
 
     return( 
-        <div className='Home'>
-        <Navbar/>
+      <div className='Home'>
         <div className='Home-Circle'>
           <BackgroundCircle width={circleWidth} height={circleHeight}/>
         </div>
-        <Outlet/>
       </div>
     );
 }

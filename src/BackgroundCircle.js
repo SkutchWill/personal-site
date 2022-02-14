@@ -30,7 +30,7 @@ const Circle = styled.div`
     animation-fill-mode: forwards;
     border: 0.1rem solid #000;
     border-radius: 50%;
-    z-index: -1;
+    z-index: 2;
 `;
 
 function BackgroundCircle(props) {
