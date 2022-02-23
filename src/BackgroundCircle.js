@@ -4,15 +4,15 @@ import styled, { keyframes } from 'styled-components';
 const Animate = keyframes`
     0% {
         transform: scale(0.01);
-        opacity: 0;
+        opacity: 0.01;
     }
 
     50% {
-        opacity: 0.75;
+        opacity: 0.35;
     }
 
     100% {
-        transform: scale(8);
+        transform: scale(4);
         opacity: 0;
     }
 `;
@@ -28,7 +28,7 @@ const Circle = styled.div`
     animation-duration: 2s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
-    border: 0.1rem solid #000;
+    border: 0.01rem solid #3a4072;
     border-radius: 50%;
     z-index: 2;
 `;
