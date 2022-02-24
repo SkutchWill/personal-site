@@ -1,6 +1,4 @@
 .Navbar {
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
 	height: 6vh;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.483) 42.16%, rgba(0, 0, 0, 0) 100%);
 }

@@ -1,6 +1,7 @@
 import './styles/App.css';
-import { Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap';
+import { Routes, Route } from 'react-router-dom';
 import About from './About';
 import Contact from './Contact';
 import Portfolio from './Portfolio';

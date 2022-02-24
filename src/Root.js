@@ -4,7 +4,6 @@ import Navbar from './Navbar';
 import './styles/Root.css';
 
 export default function Root() {
-
     return (
         <div className='Root container-fluid'>
             <Navbar/>
